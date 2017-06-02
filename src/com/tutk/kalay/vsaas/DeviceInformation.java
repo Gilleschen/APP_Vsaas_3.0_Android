@@ -1,9 +1,13 @@
 package com.tutk.kalay.vsaas;
 
+import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Set;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
@@ -53,6 +57,12 @@ public class DeviceInformation {
 	}
 
 	public static void main(String[] args) {
-
+		/*
+		 * try { Thread.sleep(6000); } catch (InterruptedException e) { ; } File
+		 * screenShotFile = (File) driver[0].getScreenshotAs(OutputType.FILE);
+		 * 
+		 * try { FileUtils.copyFile(screenShotFile, new
+		 * File(def.deviceName.get(0)+".jpg")); } catch (IOException e) { ; }
+		 */
 	}
 }

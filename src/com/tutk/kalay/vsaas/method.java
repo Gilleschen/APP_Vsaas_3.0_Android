@@ -1,10 +1,14 @@
 package com.tutk.kalay.vsaas;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Random;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -37,9 +41,13 @@ public class method {
 		}
 		for (int i = 0; i < app.driver.length; i++) {
 			if (resultelement[i] == false) {
-				System.out.println("MethodName:" + this.getClass().getName() + "." + methodname);
-				System.out.println("Device Information:" + app.cap[i]);
+				System.out.println("[Error log] " + "MethodName:" + methodname);
+				System.out.println("[Error log] " + "Device Information:" + app.cap[i]);
+				System.out.println("[Error log ]" + "Expect Result:" + arrayList.toString());
+				ScreenShoot(i, methodname);
+				sleep(4);//wait screenshoot
 			}
+			QuitDriver();
 		}
 		return result;
 	}
@@ -61,9 +69,30 @@ public class method {
 			if (resultelement[i] == false) {
 				System.out.println("MethodName¡G" + this.getClass().getName() + "." + methodname);
 				System.out.println("Device Information¡G" + app.cap[i]);
+
 			}
 		}
+
 		return result;
+	}
+
+	public void ScreenShoot(int i, String methodname) {
+		Calendar date = Calendar.getInstance();
+		String month = Integer.toString(date.get(Calendar.MONTH) + 1);
+		String day = Integer.toString(date.get(Calendar.DAY_OF_MONTH));
+		String hour = Integer.toString(date.get(Calendar.HOUR_OF_DAY));
+		String min = Integer.toString(date.get(Calendar.MINUTE));
+		String sec = Integer.toString(date.get(Calendar.SECOND));
+
+		File screenShotFile = (File) app.driver[i].getScreenshotAs(OutputType.FILE);
+
+		try {
+			FileUtils.copyFile(screenShotFile, new File(methodname + "_" + month + day + hour + min + sec + ".jpg"));
+			System.out.println("[Error log] " + "ScreenShoot Successfully!! (CaseName+Month+Day+Hour+Minus+Second)");
+		} catch (IOException e) {
+			;
+		}
+
 	}
 
 	public void Wait_Element_ById(String element, int i, String methodname) {
@@ -76,7 +105,7 @@ public class method {
 			System.out.println("Not found " + element);
 		}
 	}
-	
+
 	public void Wait_Element_ByXpath(String element, int i, String methodname) {
 		try {
 
@@ -107,7 +136,6 @@ public class method {
 	}
 
 	public void QuitDriver() {
-
 		for (int i = 0; i < app.driver.length; i++) {
 			app.driver[i].quit();
 		}
@@ -117,7 +145,7 @@ public class method {
 			boolean terms) {
 		app.driver[i].findElement(By.xpath(app.def.id_email)).sendKeys("a");
 		hidekeyboard(i);
-		
+
 		app.driver[i].findElement(By.xpath(app.def.SignUp)).click();
 		if (terms) {
 			app.driver[i].findElement(By.xpath(app.def.CheckTermofUse)).click();
@@ -127,7 +155,6 @@ public class method {
 		app.driver[i].findElement(By.xpath(app.def.id_password1)).sendKeys(pwd1);
 		app.driver[i].findElement(By.xpath(app.def.id_email)).sendKeys(email);
 		hidekeyboard(i);
-		
 
 		app.driver[i].findElement(By.xpath(app.def.submit)).click();
 

@@ -18,7 +18,7 @@ public class LoadStringTable {
 	public ArrayList<String> LoadStingTable(String sheetname, int casenum) {
 		try {
 			workbook = new HSSFWorkbook(
-					new FileInputStream("C:\\Users\\jhih_chen\\Desktop\\test\\APP_Vsaas_3.0_Android\\StringTable.xls"));
+					new FileInputStream("C:\\StringTable.xls"));
 			sheet = workbook.getSheet(sheetname);
 			resultlist = new ArrayList<String>();
 			for (int j = 0; j < sheet.getRow(casenum).getPhysicalNumberOfCells(); j++) {
