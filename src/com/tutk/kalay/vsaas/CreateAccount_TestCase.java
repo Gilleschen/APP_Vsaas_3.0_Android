@@ -133,7 +133,7 @@ public class CreateAccount_TestCase {
 		//String list[] = { "請勾選'我同意服務條款'以進行註冊" };
 		for (int i = 0; i < method.app.driver.length; i++) {
 			//method.app.driver[i].findElement(By.xpath(method.app.def.id_email)).sendKeys("a");
-			//method.hidekeyboard(i);
+			method.hidekeyboard(i);
 			method.CreateAccount_initialize(i, method.CreateAnNewEmail(), "abc", "888888iiI", "888888iiI", false);
 			element[i] = method.app.driver[i].findElement(By.xpath(method.app.def.TermsOfUse))
 					.getAttribute("content-desc");

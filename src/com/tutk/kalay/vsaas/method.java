@@ -115,7 +115,9 @@ public class method {
 
 	public void CreateAccount_initialize(int i, String email, String nickname, String pwd1, String pwd2,
 			boolean terms) {
-		
+		//app.driver[i].findElement(By.xpath(app.def.id_email)).sendKeys("a");
+		//hidekeyboard(i);
+		sleep(3);
 		
 		app.driver[i].findElement(By.xpath(app.def.SignUp)).click();
 		if (terms) {
