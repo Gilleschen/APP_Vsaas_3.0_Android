@@ -130,8 +130,6 @@
             <classpath refid="APP_Vsaas_3.0_Android.classpath"/>
         </junit>
     </target>
- 
-  
     <target name="Login_JUnit">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
