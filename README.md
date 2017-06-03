@@ -1,6 +1,6 @@
 # APP_Vsaas_3.0_Android 登入介面自動化測試使用說明
 
-#### 測試前設定：
+#### 測試前設定:
 
 1. 於c槽新增txt文字文件，命名為device (路徑：c:\device.txt)
 2. 開啟device.txt
@@ -19,3 +19,15 @@
 
 #### Ant Target:
 Login_Junit, CreateAccount_Junit, ForgotPassword_Junit
+
+=================================================================================
+
+#### 測試案例情境:
+
+登入情境(Login_Junit):
+
+	1. WrongEmail
+	2. WrongPassword
+	3. EmailBlank
+	4. PasswordBlank
+	
