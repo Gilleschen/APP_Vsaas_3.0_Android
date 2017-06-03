@@ -50,5 +50,12 @@ Login_Junit, CreateAccount_Junit, ForgotPassword_Junit
 	2. InvalidEmail
 	3. ForgotPwd
 	
+=================================================================================
+
+#### 建立測試期望結果
+
+	1. 開啟StringTable.xls
+	2. *_ExpectResult為期望結果;*_CaseName為案例名稱
+	3. 根據*_CaseName內個案例順序，於*_ExpectResult填入期望結果 (e.g. Login_CaseName內第一列案例為WrongEmail，則在Login_ExpectResult的第一列第一欄輸入期望結果"電子郵件或密碼錯誤")
 	
 
