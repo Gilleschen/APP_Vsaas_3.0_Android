@@ -20,7 +20,7 @@ public class Login_TestCase {
 					.getAttribute("content-desc");
 		}
 		// method.QuitDriver();
-		return method.result(element, st.LoadStingTable("Login", 0), methodname);
+		return method.result(element, st.LoadStingTable("Login_ExpectResult", 0), methodname);
 	}
 
 	public boolean WrongPassword() {
@@ -35,7 +35,7 @@ public class Login_TestCase {
 					.getAttribute("content-desc");
 		}
 		// method.QuitDriver();
-		return method.result(element, st.LoadStingTable("Login", 1), methodname);
+		return method.result(element, st.LoadStingTable("Login_ExpectResult", 1), methodname);
 	}
 
 	public boolean EmailBlank() {
@@ -50,7 +50,7 @@ public class Login_TestCase {
 					.getAttribute("content-desc");
 		}
 		// method.QuitDriver();
-		return method.result(element, st.LoadStingTable("Login", 2), methodname);
+		return method.result(element, st.LoadStingTable("Login_ExpectResult", 2), methodname);
 	}
 
 	public boolean PasswordBlank() {
@@ -65,7 +65,7 @@ public class Login_TestCase {
 					.getAttribute("content-desc");
 		}
 		// method.QuitDriver();
-		return method.result(element, st.LoadStingTable("Login", 3), methodname);
+		return method.result(element, st.LoadStingTable("Login_ExpectResult", 3), methodname);
 	}
 
 	public boolean Login() {
@@ -84,7 +84,7 @@ public class Login_TestCase {
 
 		}
 		// method.QuitDriver();
-		return method.result(element, st.LoadStingTable("Login", 4), methodname);
+		return method.result(element, st.LoadStingTable("Login_ExpectResult", 4), methodname);
 	}
 
 }

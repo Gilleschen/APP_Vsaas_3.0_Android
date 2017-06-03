@@ -34,6 +34,7 @@ public class DeviceInformation {
 				cap[i].setCapability(MobileCapabilityType.UDID, def.deviceName.get(i));
 				cap[i].setCapability(AndroidMobileCapabilityType.APP_PACKAGE, def.appPackage);
 				cap[i].setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, def.appActivity);
+				cap[i].setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 30);
 
 				// Appium
 				/*

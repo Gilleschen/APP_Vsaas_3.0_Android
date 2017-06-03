@@ -45,7 +45,7 @@ public class method {
 				System.out.println("[Error log] " + "Device Information:" + app.cap[i]);
 				System.out.println("[Error log ]" + "Expect Result:" + arrayList.toString());
 				ScreenShoot(i, methodname);
-				sleep(4);//wait screenshoot
+				sleep(4);//wait for screenshoot
 			}
 			QuitDriver();
 		}

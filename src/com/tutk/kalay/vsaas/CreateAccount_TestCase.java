@@ -21,7 +21,7 @@ public class CreateAccount_TestCase {
 		}
 
 		//method.QuitDriver();
-		return method.result(element, st.LoadStingTable("CreateAccount", 0), methodname);
+		return method.result(element, st.LoadStingTable("CreateAccount_ExpectResult", 0), methodname);
 	}
 
 	public boolean InvaliedEmail() {
@@ -36,7 +36,7 @@ public class CreateAccount_TestCase {
 					.getAttribute("content-desc");
 		}
 		//method.QuitDriver();
-		return method.result(element, st.LoadStingTable("CreateAccount", 1), methodname);
+		return method.result(element, st.LoadStingTable("CreateAccount_ExpectResult", 1), methodname);
 	}
 
 	public boolean ExistedAccount() {
@@ -51,7 +51,7 @@ public class CreateAccount_TestCase {
 					.getAttribute("content-desc");
 		}
 		//method.QuitDriver();
-		return method.result(element, st.LoadStingTable("CreateAccount", 2), methodname);
+		return method.result(element, st.LoadStingTable("CreateAccount_ExpectResult", 2), methodname);
 	}
 
 	public boolean EmailBlank() {
@@ -67,7 +67,7 @@ public class CreateAccount_TestCase {
 					.getAttribute("content-desc");
 		}
 		//method.QuitDriver();
-		return method.result(element, st.LoadStingTable("CreateAccount", 3), methodname);
+		return method.result(element, st.LoadStingTable("CreateAccount_ExpectResult", 3), methodname);
 	}
 
 	public boolean ConfirmPwdBlank() {
@@ -81,7 +81,7 @@ public class CreateAccount_TestCase {
 					.getAttribute("content-desc");
 		}
 		//method.QuitDriver();
-		return method.result(element, st.LoadStingTable("CreateAccount", 4), methodname);
+		return method.result(element, st.LoadStingTable("CreateAccount_ExpectResult", 4), methodname);
 	}
 
 	public boolean NewPwdBlank() {
@@ -95,7 +95,7 @@ public class CreateAccount_TestCase {
 					.getAttribute("content-desc");
 		}
 		//method.QuitDriver();
-		return method.result(element, st.LoadStingTable("CreateAccount", 5), methodname);
+		return method.result(element, st.LoadStingTable("CreateAccount_ExpectResult", 5), methodname);
 	}
 
 	public boolean NewPwdAndConfirmPwdNotMatch() {
@@ -110,7 +110,7 @@ public class CreateAccount_TestCase {
 					.getAttribute("content-desc");
 		}
 		//method.QuitDriver();
-		return method.result(element, st.LoadStingTable("CreateAccount", 6), methodname);
+		return method.result(element, st.LoadStingTable("CreateAccount_ExpectResult", 6), methodname);
 	}
 
 	public boolean NicknameBlank() {
@@ -124,7 +124,7 @@ public class CreateAccount_TestCase {
 					.getAttribute("content-desc");
 		}
 		//method.QuitDriver();
-		return method.result(element, st.LoadStingTable("CreateAccount", 7), methodname);
+		return method.result(element, st.LoadStingTable("CreateAccount_ExpectResult", 7), methodname);
 	}
 
 	public boolean DonotCheckTermsofUser() {
@@ -139,7 +139,7 @@ public class CreateAccount_TestCase {
 
 		}
 		//method.QuitDriver();
-		return method.result(element, st.LoadStingTable("CreateAccount", 8), methodname);
+		return method.result(element, st.LoadStingTable("CreateAccount_ExpectResult", 8), methodname);
 	}
 
 	public boolean WrongPwdRule() {
@@ -153,7 +153,7 @@ public class CreateAccount_TestCase {
 					.getAttribute("content-desc");
 		}
 		//method.QuitDriver();
-		return method.result(element, st.LoadStingTable("CreateAccount", 9), methodname);
+		return method.result(element, st.LoadStingTable("CreateAccount_ExpectResult", 9), methodname);
 	}
 
 }

@@ -23,7 +23,7 @@ public class ForgotPassword_TestCase {
 			
 		}
 		//method.QuitDriver();
-		return method.result(element, st.LoadStingTable("ForgotPassword", 0), methodname);
+		return method.result(element, st.LoadStingTable("ForgotPassword_ExpectResult", 0), methodname);
 	}
 
 	public boolean InvalidEmail() {
@@ -41,7 +41,7 @@ public class ForgotPassword_TestCase {
 					.getAttribute("content-desc");
 		}
 		//method.QuitDriver();
-		return method.result(element, st.LoadStingTable("ForgotPassword", 1), methodname);
+		return method.result(element, st.LoadStingTable("ForgotPassword_ExpectResult", 1), methodname);
 
 	}
 
@@ -61,7 +61,7 @@ public class ForgotPassword_TestCase {
 					.getAttribute("content-desc");
 		}
 		//method.QuitDriver();
-		return method.result(element, st.LoadStingTable("ForgotPassword", 2), methodname);
+		return method.result(element, st.LoadStingTable("ForgotPassword_ExpectResult", 2), methodname);
 
 	}
 }
