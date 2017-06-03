@@ -24,10 +24,31 @@ Login_Junit, CreateAccount_Junit, ForgotPassword_Junit
 
 #### 測試案例情境:
 
-##### 登入情境(Login_Junit):
+##### A. 登入 (Login_Junit):
 
 	1. WrongEmail
 	2. WrongPassword
 	3. EmailBlank
 	4. PasswordBlank
+
+##### B. 創立帳號 (CreateAccount_Junit)
 	
+	1. CreateAccount
+	2. InvaliedEmail
+	3. ExistedAccount
+	4. EmailBlank
+	5. ConfirmPwdBlank
+	6. NewPwdBlank
+	7. NewPwdAndConfirmPwdNotMatch
+	8. NicknameBlank
+	9. DonotCheckTermsofUser
+	10. WrongPwdRule
+	
+##### C. 忘記密碼 (ForgotPassword_Junit)
+	
+	1. EmailBlank
+	2. InvalidEmail
+	3. ForgotPwd
+	
+	
+
