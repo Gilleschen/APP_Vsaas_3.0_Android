@@ -1,4 +1,4 @@
-# APP_Vsaas_3.0_Android 使用說明
+# APP_Vsaas_3.0_Android 登入介面自動化測試使用說明
 
 #### 步驟：
 
@@ -14,3 +14,8 @@
 	![image](https://github.com/Gilleschen/APP_Vsaas2.0_Windows/blob/master/picture/device.png)
 	
 4. 將StringTable.xls放置c槽 (路徑：c:\StringTable.xls)
+
+=================================================================================
+
+#### Ant Target:
+Login_Junit, CreateAccount_Junit, ForgotPassword_Junit
