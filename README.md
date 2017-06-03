@@ -60,6 +60,6 @@ Login_Junit, CreateAccount_Junit, ForgotPassword_Junit
 	
 	3. 根據*_CaseName內各案例順序，於*_ExpectResult填入期望結果 (e.g. Login_CaseName內第一列第一欄案例為WrongEmail，則Login_ExpectResult的第一列第一欄填入期望結果為"電子郵件或密碼錯誤")
 	
-	#####註:請勿更改*_CaseName內各案例順序
+	##### 註:請勿更改*_CaseName內各案例順序
 	
 
