@@ -17,12 +17,16 @@
 
 5. 設定手機語系為繁體中文
 
-=================================================================================
+6. 安裝Appium studio (https://experitest.com/appium-studio/)
+
+7. 新增測試手機至Appium studio並啟動手機 (請參考<a href="https://docs.experitest.com/display/public/AS/Android+-+Build+your+first+test">Getting started</a>)
+
+===============================================================================
 
 #### Ant Target:
 Login_Junit, CreateAccount_Junit, ForgotPassword_Junit
 
-=================================================================================
+===============================================================================
 
 #### 測試案例情境:
 
