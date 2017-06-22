@@ -12,6 +12,8 @@ public class CreateAccount_Junit {
 	public void CreateAccount() {
 		assertTrue(testcase.CreateAccount());
 	}
+	
+	
 
 	@Test
 	public void DonotCheckTermsofUser() {
