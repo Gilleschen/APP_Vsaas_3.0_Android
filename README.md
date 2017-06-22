@@ -1,4 +1,4 @@
-# APP_Vsaas_3.0_Android 登入介面自動化測試使用說明
+# APP_Vsaas_3.0_Android 使用說明
 
 #### 測試前設定 (請使用Android 5.0以上):
 
